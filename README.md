@@ -3,9 +3,9 @@
 # 김동열 *Kim Dong Yeol*
 
 <img src="https://img.shields.io/badge/Konkuk%20University-004523?style=flat-square&logo=konkukuniversity&logoColor=white"/>
-**Department of Electronic and Electric Engineering 19**
+<strong>Department of Electronic and Electric Engineering 19</strong>
 <br>
-**<img src="./assets/microchip.svg" alt="Semiconductor" width="20" style="vertical-align: middle;" /> Embedded Developer**
+<img src="./assets/microchip.svg" alt="Semiconductor" width="20" style="vertical-align: middle;" /> <strong>Embedded Developer</strong>
 
 </div>
 
