@@ -3,7 +3,7 @@
 # 김동열 
 
 **🤖 Embedded Developer**
-**    Konkuk University of Korea. Electricity and Electronics Engineering 19
+**    Konkuk University of Korea. Electricity and Electronics Engineering 19**
 </div>
 
 <br>
