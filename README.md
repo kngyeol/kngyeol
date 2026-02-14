@@ -1,4 +1,4 @@
-﻿<div align="center">
+﻿<div>
 
 # 김동열[Kim Dong Yeol]
 
@@ -8,7 +8,7 @@
 
 <br>
 
-## ✨ 기술 스택 (Tech Stack)
+## ✨ Tech Stakcs
 
 <div align="left">
   <img src="https://img.shields.io/badge/ROS2-22314E?style=flat-square&logo=ros&logoColor=white"/>
@@ -24,7 +24,7 @@
 
 <br>
 
-## 💼 경험 (Experiences)
+## 💼 Experiences
 
 <!-- 
 [작성 가이드]
@@ -33,14 +33,14 @@
     - 🔗 [관련 링크](URL)
 -->
 
-- **(이곳에 경험을 추가하세요)** `YYYY.MM ~ YYYY.MM`
+- **EXAMPLE** `YYYY.MM ~ YYYY.MM`
     - 
 
 <br>
 
 ## 📜 자격증 (Certificates)
 
-- **(자격증 명)** `YYYY.MM`
+- **EXAMPLE** `YYYY.MM`
 
 <br>
 
