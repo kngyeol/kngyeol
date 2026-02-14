@@ -4,7 +4,7 @@
 
 <img src="./assets/konkuk_icon.svg" width="25" style="vertical-align: middle;" /> <strong>Department of Electronic and Electric Engineering 19</strong>
 <br>
-<img src="./assets/microchip.svg" alt="Semiconductor" width="20" style="vertical-align: middle;" /> <strong>Embedded Engineer</strong>
+<img src="./assets/microchip.svg" alt="Semiconductor" width="20" style="vertical-align: middle;" /> <strong> Embedded Engineer</strong>
 
 </div>
 
