@@ -2,7 +2,7 @@
 
 # 김동열 *Kim Dong Yeol*
 
-<img src="./assets/konkuk_icon.png" width="25" style="vertical-align: middle;" /> <strong>Department of Electronic and Electric Engineering 19</strong>
+<img src="./assets/konkuk_icon.svg" width="25" style="vertical-align: middle;" /> <strong>Department of Electronic and Electric Engineering 19</strong>
 <br>
 <img src="./assets/microchip.svg" alt="Semiconductor" width="20" style="vertical-align: middle;" /> <strong>Embedded Engineer</strong>
 
@@ -22,6 +22,7 @@
   <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"/>
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"/>
   <img src="https://img.shields.io/badge/TensorRT-76B900?style=for-the-badge&logo=nvidia&logoColor=white"/>
+  <br>
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
   <img src="https://img.shields.io/badge/Matlab-0076A8?style=for-the-badge&logo=mathworks&logoColor=white"/>
   <img src="https://img.shields.io/badge/Simulink-0076A8?style=for-the-badge&logo=simulink&logoColor=white"/>
