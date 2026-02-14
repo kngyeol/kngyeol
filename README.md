@@ -1,9 +1,9 @@
 ﻿<div>
 
-# 김동열[Kim Dong Yeol]
+# 김동열 
 
 **🤖 Embedded Developer**
-
+**    Konkuk University of Korea. Electricity and Electronics Engineering 19
 </div>
 
 <br>
