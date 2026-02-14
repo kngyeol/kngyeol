@@ -1,6 +1,15 @@
 ﻿<div>
 
+<<<<<<< HEAD
 # 김동열 
+=======
+# 김동열 *Henry*
+
+**⚡ Embedded Developer**  
+**Konkuk University. Electrical and Electronics Engineering 19**
+<br>
+<img src="https://img.shields.io/badge/Konkuk%20University-004523?style=flat-square&logo=konkukuniversity&logoColor=white"/>
+>>>>>>> 47eeab8 (Docs: Refine profile with Konkuk Univ info and style updates)
 
 **🤖 Embedded Developer**
 **    Konkuk University of Korea. Electricity and Electronics Engineering 19**
@@ -8,7 +17,11 @@
 
 <br>
 
+<<<<<<< HEAD
 ## ✨ Tech Stakcs
+=======
+## ✨ Tech Stack
+>>>>>>> 47eeab8 (Docs: Refine profile with Konkuk Univ info and style updates)
 
 <div align="left">
   <img src="https://img.shields.io/badge/ROS2-22314E?style=flat-square&logo=ros&logoColor=white"/>
@@ -26,10 +39,10 @@
 ## 💼 Experiences
 
 <!-- 
-[작성 가이드]
-- **프로젝트/활동 명** `YYYY.MM ~ YYYY.MM`
-    - 간단한 설명 또는 역할
-    - 🔗 [관련 링크](URL)
+[작성 가이드 / Guide]
+- **Project Name** `YYYY.MM ~ YYYY.MM`
+    - Description
+    - 🔗 [Link](URL)
 -->
 
 - **EXAMPLE** `YYYY.MM ~ YYYY.MM`
@@ -37,7 +50,11 @@
 
 <br>
 
+<<<<<<< HEAD
 ## 📜 Certifies
+=======
+## 📜 Certificates
+>>>>>>> 47eeab8 (Docs: Refine profile with Konkuk Univ info and style updates)
 
 - **EXAMPLE** `YYYY.MM`
 
