@@ -1,8 +1,8 @@
 ﻿<div align="center">
 
-# KNGYEOL
+# 김동열[Kim Dong Yeol]
 
-**🤖 ROS2 | Embedded | Robotics Developer**
+**🤖 Embedded Developer**
 
 </div>
 
