@@ -1,27 +1,17 @@
 ﻿<div>
 
-<<<<<<< HEAD
-# 김동열 
-=======
-# 김동열 *Henry*
+# 김동열 *Kim Dong Yeol*
 
-**⚡ Embedded Developer**  
-**Konkuk University. Electrical and Electronics Engineering 19**
+**<img src="https://img.icons8.com/ios-glyphs/30/000000/microchip.png" alt="Semiconductor" width="20" style="vertical-align: middle;" /> Embedded Developer**  
+**Konkuk University. Department of Electronic and Electric Engineering 19**
 <br>
 <img src="https://img.shields.io/badge/Konkuk%20University-004523?style=flat-square&logo=konkukuniversity&logoColor=white"/>
->>>>>>> 47eeab8 (Docs: Refine profile with Konkuk Univ info and style updates)
 
-**🤖 Embedded Developer**
-**    Konkuk University of Korea. Electricity and Electronics Engineering 19**
 </div>
 
 <br>
 
-<<<<<<< HEAD
-## ✨ Tech Stakcs
-=======
 ## ✨ Tech Stack
->>>>>>> 47eeab8 (Docs: Refine profile with Konkuk Univ info and style updates)
 
 <div align="left">
   <img src="https://img.shields.io/badge/ROS2-22314E?style=flat-square&logo=ros&logoColor=white"/>
@@ -50,11 +40,7 @@
 
 <br>
 
-<<<<<<< HEAD
-## 📜 Certifies
-=======
 ## 📜 Certificates
->>>>>>> 47eeab8 (Docs: Refine profile with Konkuk Univ info and style updates)
 
 - **EXAMPLE** `YYYY.MM`
 
