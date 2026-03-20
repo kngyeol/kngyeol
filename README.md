@@ -12,6 +12,7 @@
 - 이름: 김동열 (Dongyeol Kim)
 - 학력: 건국대학교 전기전자공학부 학사 (2019.03 ~ 2025.08)
 - 교육: 삼성청년SW·AI아카데미(SSAFY) 14기 임베디드 특화트랙 (2025.07 ~ 진행중)
+- 포트폴리오: [v0-portfolio-indol-chi-29.vercel.app](https://v0-portfolio-indol-chi-29.vercel.app/)
 
 ## Experience
 ### Skyautonet 자율주행SW개발부 인턴 (2024.09 ~ 2024.12)
