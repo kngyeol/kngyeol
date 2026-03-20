@@ -37,7 +37,7 @@
 | 프로젝트 | 기간 | 설명/핵심 기여 | 기술 | 링크 |
 |---|---|---|---|---|
 | CAN MultiECU HILS | 진행중 | STM32 F446RE 2대로 Sensor ECU/Control ECU 분리, FreeRTOS 태스크 구조 설계, CAN 이중화 Fail-over, Python HILS 시나리오 주입/로깅 | STM32, FreeRTOS, CAN, Python, HILS | Private/Local |
-| Balemale - AI 스마트 자율주차 시스템 | 2026.01 ~ 2026.02 | 4WD 메카넘휠 자율주행/주차, 28개 ArUco 맵+18개 FSM 미션, Dead Reckoning 기반 연속 주행, MQTT 실시간 통신, Backend(Spring Boot) 경로탐색 참여 | ROS2 Humble, Jetson Orin Nano, Python, OpenCV, ArUco, MQTT, YOLOv8, EasyOCR, Spring Boot | [Repo](https://github.com/kngyeol/balemale) |
+| Balemale - AI 스마트 자율주차 시스템 | SSAFY (2026.01 ~ 2026.02) | 4WD 메카넘휠 자율주행/주차, 28개 ArUco 맵+18개 FSM 미션, Dead Reckoning 기반 연속 주행, MQTT 실시간 통신, Backend(Spring Boot) 경로탐색 참여 | ROS2 Humble, Jetson Orin Nano, Python, OpenCV, ArUco, MQTT, YOLOv8, EasyOCR, Spring Boot | Private (SSAFY 정책상 비공개) |
 | TeamKAI - 자율주행 자작차 | 2023.11 ~ 2024.11 | 한국자동차안전학회 경진대회 참가, 인지 파트장(20명), LiDAR 기반 5단계 콘 검출 파이프라인, 신호등 검출, ROS 인터페이스(ICD) 설계 | ROS, C++, Python, PCL, OpenCV, YOLOv5/v8, LiDAR(Ouster) | [Repo](https://github.com/kngyeol/TeamKAI) |
 | ResNet50 MAC Accelerator | 학부 | Zynq-7000(PS+PL) 기반 Conv 연산 가속, Q10.22 고정소수점 MAC, AXI DMA x4, Weight 재사용 구조 및 SW/HW 벤치마크 | Verilog, Vivado, Xilinx Zynq-7000, AXI DMA, C | [Repo](https://github.com/kngyeol/resnet50-mac-accelerator) |
 | Fire & Smoke Detection Drone | 졸업 프로젝트 | 드론 탑재 산불/연기 탐지 + 단안 거리추정, mAP50 0.867, Structured Pruning + TensorRT 최적화, 인식/거리추정 병렬 처리 | YOLOv9-c, Lite-Mono, TensorRT, Python, Gradio | [Repo](https://github.com/kngyeol/pjt-fire-detect-drone) |
