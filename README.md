@@ -42,6 +42,7 @@
 | ResNet50 MAC Accelerator | 학부 | Zynq-7000(PS+PL) 기반 Conv 연산 가속, Q10.22 고정소수점 MAC, AXI DMA x4, Weight 재사용 구조 및 SW/HW 벤치마크 | Verilog, Vivado, Xilinx Zynq-7000, AXI DMA, C | [Repo](https://github.com/kngyeol/resnet50-mac-accelerator) |
 | Fire & Smoke Detection Drone | 졸업 프로젝트 | 드론 탑재 산불/연기 탐지 + 단안 거리추정, mAP50 0.867, Structured Pruning + TensorRT 최적화, 인식/거리추정 병렬 처리 | YOLOv9-c, Lite-Mono, TensorRT, Python, Gradio | [Repo](https://github.com/kngyeol/pjt-fire-detect-drone) |
 | ARAS - RC Car ADAS 시스템 | SSAFY | Raspberry Pi 5 기반 ADAS 축소 구현, MQTT 기반 노드 통신, MANUAL/AUTO/ACC 모드, 센서 Stale Fail-Safe 정지 | Python, OpenCV, MQTT, UART/Modbus, PCA9685 | Local |
+| Portfolio | - | 프로젝트/경험을 정리한 포트폴리오 레포지토리 | - | [Repo](https://github.com/kngyeol/portfolio) |
 
 ## Tech Stack
 ### Core
