@@ -40,20 +40,13 @@ ROS2/Nav2 기반 로봇 런타임과 임베디드/차량 인터페이스를 연�
 ## Projects
 | 프로젝트 | 설명/핵심 기여 | 기술 | 링크 |
 |---|---|---|---|
-| SCV - Smart Companion Vehicle | 자연어 명령을 ROS2/Nav2 주행, 비전 정렬, 로봇팔 조작으로 연결하는 이동형 AI 홈 어시스턴트. LLM drive bridge, precision alignment, 실물 runtime/smoke test, 시연 시나리오를 중심으로 통합 | ROS2 Humble, Nav2, SLAM/AMCL, robot_localization, Python, RealSense, BNO085 IMU, LLM Bridge | Private |
+| SCV - Smart Companion Vehicle | 자연어 명령을 ROS2/Nav2 주행, 비전 정렬, 로봇팔 조작으로 연결하는 이동형 AI 홈 어시스턴트. RoboCrew/XLeRobot 기반 조작 런타임과 LLM drive bridge를 프로젝트 요구에 맞게 연결하고 precision alignment, 실물 runtime/smoke test, 시연 시나리오를 통합 | ROS2 Humble, Nav2, SLAM/AMCL, robot_localization, Python, RealSense, BNO085 IMU, RoboCrew, XLeRobot | Private |
 | CAN MultiECU HILS | STM32 기반 Sensor ECU/Control ECU 분리 구조, CAN 이중화 fail-over, FreeRTOS task 구조, Python HILS 시나리오 주입/로깅/리플레이를 준비 중인 개인 프로젝트 | STM32, FreeRTOS, CAN, Python, HILS | Private/Local |
 | Balemale - AI 스마트 자율주차 시스템 | ROS2 Humble 로봇, Jetson Orin Nano, mecanum base, ArUco localization, MQTT bridge, 18-state mission FSM, Spring/Vue/kiosk/backend 연동 구조 경험 | ROS2 Humble, Jetson Orin Nano, Python, OpenCV, ArUco, MQTT, Spring Boot | Private |
 | TeamKAI - 자율주행 자작차 | 인지 파트장으로 LiDAR/camera/GPS/IMU 기반 cone detection, path planning, Stanley/Pure Pursuit control, CAN bridge가 연결되는 자율주행 파이프라인 경험 | ROS, C++, Python, PCL, OpenCV, YOLOv5/v8, LiDAR | [Repo](https://github.com/kngyeol/TeamKAI) |
 | ResNet50 MAC Accelerator | Zynq-7000 기반 ResNet50 Conv 연산 가속기. Q10.22 fixed-point MAC datapath, AXI DMA, AXI4-Lite 제어, 1x1/NxN convolution data movement 설계 | Verilog, Vivado, Xilinx Zynq-7000, AXI DMA, C | [Repo](https://github.com/kngyeol/resnet50-mac-accelerator) |
 | Fire & Smoke Detection Drone | YOLOv9 기반 화재/연기 탐지와 Lite-Mono 단안 거리 추정을 결합해 거리 기반 위험도를 산정한 Edge AI 프로젝트 | YOLOv9, Lite-Mono, TensorRT, Python, Gradio | [Repo](https://github.com/kngyeol/pjt-fire-detect-drone) |
 | TeamPathfinders - Xycar 자율주행 | Lane detection, traffic signal recognition, Bezier/Pure Pursuit 기반 주차 경로, IMU 기반 주행 과제를 수행한 ROS 자율주행 교육 프로젝트 | ROS, Python, OpenCV, Pure Pursuit, IMU | [Repo](https://github.com/kngyeol/TeamPathfinders) |
-
-## Open Source Contribution Prep
-| 관심 영역 | 준비 중인 기여 방식 |
-|---|---|
-| ROS2 / Nav2 | 문서 보완, launch/config 예제 개선, 작은 test case 추가 |
-| Autoware / Vehicle Tooling | 재현 가능한 issue report, planning/CAN/HILS 주변 tooling 탐색 |
-| SocketCAN / Robotics Utilities | 예제 정리, bug reproduction, review-friendly small PR |
 
 ## Tech Stack
 ### Core
