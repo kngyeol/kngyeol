@@ -1,9 +1,11 @@
 # 김동열 (Dongyeol Kim)
-임베디드 시스템과 CAN 통신 기반 HILS 검증, ROS2 로보틱스 개발을 수행하는 엔지니어입니다.  
-`Embedded Systems | CAN Communication | HILS Verification | ROS2 Robotics`
+ROS2/Nav2 기반 실물 로봇 런타임과 임베디드/CAN/HILS 검증을 연결하는 엔지니어입니다.
+
+`ROS2 Robotics | Autonomous Driving | Embedded Systems | CAN Communication | HILS Verification`
 
 [![GitHub](https://img.shields.io/badge/GitHub-kngyeol-181717?style=flat-square&logo=github)](https://github.com/kngyeol)
 [![ROS2](https://img.shields.io/badge/ROS2-Humble-22314E?style=flat-square&logo=ros)](https://www.ros.org/)
+[![Nav2](https://img.shields.io/badge/Nav2-Navigation-1F6FEB?style=flat-square)](https://navigation.ros.org/)
 [![SocketCAN](https://img.shields.io/badge/CAN-SocketCAN-00599C?style=flat-square)](https://www.kernel.org/doc/Documentation/networking/can.txt)
 [![FreeRTOS](https://img.shields.io/badge/RTOS-FreeRTOS-87C540?style=flat-square)](https://www.freertos.org/)
 [![HILS](https://img.shields.io/badge/Verification-HILS-4A4A4A?style=flat-square)](#)
@@ -11,8 +13,13 @@
 ## Profile
 - 이름: 김동열 (Dongyeol Kim)
 - 학력: 건국대학교 전기전자공학부 학사 (2019.03 ~ 2025.08)
-- 교육: 삼성청년SW·AI아카데미(SSAFY) 14기 임베디드 특화트랙 (2025.07 ~ 진행중)
+- 교육: 삼성청년SW·AI아카데미(SSAFY) 14기 임베디드 특화트랙 (2025.07 ~ 현재)
 - 포트폴리오: [v0-portfolio-indol-chi-29.vercel.app](https://v0-portfolio-indol-chi-29.vercel.app/)
+
+## Current Focus
+- LLM/앱 명령을 ROS2 action/service/topic으로 변환하는 로봇 주행 런타임
+- Nav2, robot_localization, IMU/encoder odometry, map calibration 기반 실물 로봇 주행
+- CAN/UART/STM32/Jetson 장치와 상위 autonomy stack 사이의 검증 가능한 인터페이스
 
 ## Experience
 ### Skyautonet 자율주행SW개발부 인턴 (2024.09 ~ 2024.12)
@@ -37,6 +44,7 @@
 ## Projects
 | 프로젝트 | 기간 | 설명/핵심 기여 | 기술 | 링크 |
 |---|---|---|---|---|
+| SCV-drive - LLM 명령 기반 ROS2 주행 로봇 | SSAFY Final (2026.03 ~ 2026.05) | SSAFY GitLab `develop` 최신 기준(2026.05.21, `93fd5ec`) 주행 런타임 정리. LLM drive packet을 `relative_move`, `precision_align`, `navigate_to_pose`, stop/cancel/return 흐름으로 변환하고, motion coordinator/Nav2 adapter/drive bridge/field map/exec 문서화를 연결 | ROS2 Humble, Nav2, robot_localization, Python, STM32/CAN, Jetson, LLM Bridge | Private |
 | CAN MultiECU HILS | 진행중 | STM32 F446RE 2대로 Sensor ECU/Control ECU 분리, FreeRTOS 태스크 구조 설계, CAN 이중화 Fail-over, Python HILS 시나리오 주입/로깅 | STM32, FreeRTOS, CAN, Python, HILS | Private/Local |
 | Balemale - AI 스마트 자율주차 시스템 | SSAFY (2026.01 ~ 2026.02) | 4WD 메카넘휠 자율주행/주차, 28개 ArUco 맵+18개 FSM 미션, Dead Reckoning 기반 연속 주행, MQTT 실시간 통신, Backend(Spring Boot) 경로탐색 참여 | ROS2 Humble, Jetson Orin Nano, Python, OpenCV, ArUco, MQTT, YOLOv8, EasyOCR, Spring Boot | Private |
 | TeamKAI - 자율주행 자작차 | 2023.11 ~ 2024.11 | 한국자동차안전학회 경진대회 참가, 인지 파트장(20명), LiDAR 기반 5단계 콘 검출 파이프라인, 신호등 검출, ROS 인터페이스(ICD) 설계 | ROS, C++, Python, PCL, OpenCV, YOLOv5/v8, LiDAR(Ouster) | [Repo](https://github.com/kngyeol/TeamKAI) |
