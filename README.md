@@ -1,133 +1,85 @@
 # 김동열 (Dongyeol Kim)
+ROS2/Nav2 기반 로봇 런타임과 임베디드/차량 인터페이스를 연결하는 엔지니어입니다.
 
-ROS2/Nav2 기반 실물 로봇 런타임과 임베디드/차량 SW 인터페이스를 연결하는 엔지니어입니다.
-
-`ROS2 Robotics` `Autonomous Driving` `Embedded Systems` `CAN` `HILS`
+`ROS2 Robotics | Autonomous Driving | Embedded Systems | CAN Communication | HILS Verification`
 
 [![GitHub](https://img.shields.io/badge/GitHub-kngyeol-181717?style=flat-square&logo=github)](https://github.com/kngyeol)
 [![ROS2](https://img.shields.io/badge/ROS2-Humble-22314E?style=flat-square&logo=ros)](https://www.ros.org/)
-[![Nav2](https://img.shields.io/badge/Nav2-Navigation-1F6FEB?style=flat-square)](https://navigation.ros.org/)
-[![Autoware](https://img.shields.io/badge/Autoware-Autonomous%20Driving-00A3E0?style=flat-square)](https://autoware.org/)
+[![Nav2](https://img.shields.io/badge/Nav2-Navigation-22314E?style=flat-square)](https://navigation.ros.org/)
 [![SocketCAN](https://img.shields.io/badge/CAN-SocketCAN-00599C?style=flat-square)](https://www.kernel.org/doc/Documentation/networking/can.txt)
 [![FreeRTOS](https://img.shields.io/badge/RTOS-FreeRTOS-87C540?style=flat-square)](https://www.freertos.org/)
+[![HILS](https://img.shields.io/badge/Verification-HILS-4A4A4A?style=flat-square)](#)
 
-## Snapshot
-
-| 구분 | 내용 |
-|---|---|
-| Education | 건국대학교 전기전자공학부 학사, SSAFY 14기 임베디드 특화트랙 |
-| Experience | Skyautonet 자율주행SW개발부 인턴 |
-| Main Field | 로보틱스 런타임, 자율주행 SW, 임베디드/차량 인터페이스, HILS 검증 |
-| Portfolio | [v0-portfolio-indol-chi-29.vercel.app](https://v0-portfolio-indol-chi-29.vercel.app/) |
-
-## Core Strengths
-
-| Robotics Runtime | Vehicle Interface | Verification | Edge AI / Acceleration |
-|---|---|---|---|
-| ROS2 action/service/topic 기반 로봇 명령 실행 구조 | CAN/UART/STM32/Jetson과 autonomy stack 연결 | timeout, cancel, sensor stale, fail-safe stop 처리 | YOLO/TensorRT, Zynq FPGA 가속기, Jetson 배포 |
-| Nav2, localization, map calibration, odometry | SocketCAN, vcan, CAN frame packing, protocol conversion | HILS 시나리오, logging/replay, 실물 하드웨어 디버깅 | Detection + depth, fixed-point MAC, AXI DMA |
+## Profile
+- 이름: 김동열 (Dongyeol Kim)
+- 학력: 건국대학교 전기전자공학부 학사
+- 교육: 삼성청년SW·AI아카데미(SSAFY) 14기 임베디드 특화트랙
+- 관심 분야: 로봇 주행 런타임, 자율주행 SW, 임베디드/차량 인터페이스, AI 에이전트
+- 포트폴리오: [v0-portfolio-indol-chi-29.vercel.app](https://v0-portfolio-indol-chi-29.vercel.app/)
 
 ## Experience
+### Skyautonet 자율주행SW개발부 인턴 (2024.09 ~ 2024.12)
 
-| 기간 | 조직 | 핵심 업무 |
-|---|---|---|
-| 2024.09 - 2024.12 | Skyautonet 자율주행SW개발부 인턴 | Autoware 기반 Lv4 자율주행 플랫폼, Lanelet2 경로 생성, external lane change, HMI 제어, ROS2 상태-CAN 변환, vcan 기반 HILS 검증 |
-| 2024.09 - 2024.12 | FODRo debris removal robot | ROS2 topic-CAN protocol converter, Multi-FOD clustering, lane validity check, cleaning state, debug client |
+**1) Autoware 기반 자율주행 플랫폼**
+- Autoware Universe와 ROS2 Humble 기반 자율주행 시스템 개발 참여
+- 기술: ROS2 Humble, Autoware Universe, C++, SocketCAN, Lanelet2, Qt5
+- 담당:
+  - Planning Manager: Lanelet2 기반 target lanelet 탐색, 경로 생성/재경로 생성, external lane change 흐름 구현
+  - CAN Converter: ROS2 control/localization 토픽을 차량 CAN frame으로 변환, yaw 정규화, WGS84 역투영, CAN log 저장
+  - HILS Actuator: AutowareState, DrivingStatus, OperationMode 기반 actuator/state CAN 생성과 enable 분기 구현
+  - HMI 통합: Start/Stop, Lane Change, Velocity 등 운영자 제어 흐름 보강
 
-## Selected Projects
+**2) FODRo (Foreign Object Debris Removal Robot)**
+- 도로/활주로 이물질 탐지 및 제거 로봇 운영 로직 개발 참여
+- 기술: ROS2 Humble, C++, Python, SocketCAN/vcan, Lanelet2
+- 담당:
+  - FOD 객체 pose 생성, current/next lane 유효성 검증, 2m clustering
+  - 청소 장비 제어와 cleaning state 발행
+  - 다중 FOD 우선순위 정렬 및 debug client 지원
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>SCV-drive</h3>
-      <p><b>LLM 명령 기반 ROS2 서비스 로봇 런타임</b></p>
-      <ul>
-        <li>자연어/앱 명령을 실제 주행과 조작 행동으로 연결</li>
-        <li><code>relative_move</code>, <code>precision_align</code>, <code>navigate_to_pose</code>, stop/cancel/return 흐름 구성</li>
-        <li>Nav2 adapter, motion coordinator, drive bridge, field map, task pose, 실행 스크립트 연결</li>
-      </ul>
-      <p><code>ROS2 Humble</code> <code>Nav2</code> <code>robot_localization</code> <code>Python</code> <code>STM32/CAN</code> <code>Jetson</code></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>TeamKAI</h3>
-      <p><b>자율주행 자작차 인지/주행 파이프라인</b></p>
-      <ul>
-        <li>자율주행 경진대회 차량 프로젝트 인지 파트장</li>
-        <li>LiDAR cone detection, camera/YOLO detection, traffic light recognition</li>
-        <li>Bezier path, Stanley/Pure Pursuit, CAN bridge와 연결되는 perception-planning-control 흐름 경험</li>
-      </ul>
-      <p><a href="https://github.com/kngyeol/TeamKAI">Repository</a></p>
-      <p><code>ROS</code> <code>C++</code> <code>Python</code> <code>PCL</code> <code>OpenCV</code> <code>YOLOv5/v8</code></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Balemale</h3>
-      <p><b>AI 스마트 자율주차 로봇</b></p>
-      <ul>
-        <li>번호판 인식, 키오스크, 백엔드, 로봇 주행이 연결되는 서비스 로봇 프로젝트</li>
-        <li>ROS2, Jetson Orin Nano, mecanum base, ArUco marker, MQTT 기반 로봇 흐름 구성</li>
-        <li>18-state mission FSM과 backend/kiosk 상태 동기화 경험</li>
-      </ul>
-      <p><code>ROS2 Humble</code> <code>Jetson Orin Nano</code> <code>Python</code> <code>OpenCV</code> <code>ArUco</code> <code>MQTT</code></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>ResNet50 MAC Accelerator</h3>
-      <p><b>Zynq-7000 기반 CNN 연산 가속기</b></p>
-      <ul>
-        <li>Conv 연산 병목을 줄이기 위한 PS/PL co-design 프로젝트</li>
-        <li>Q10.22 fixed-point MAC datapath, AXI DMA, AXI4-Lite 제어 구현</li>
-        <li>1x1 output-stationary와 NxN streaming 구조로 data movement 설계</li>
-      </ul>
-      <p><a href="https://github.com/kngyeol/resnet50-mac-accelerator">Repository</a></p>
-      <p><code>Verilog</code> <code>Vivado</code> <code>Xilinx Zynq-7000</code> <code>AXI DMA</code> <code>C</code></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Fire & Smoke Detection Drone</h3>
-      <p><b>화재/연기 탐지 + 단안 거리 추정 Edge AI</b></p>
-      <ul>
-        <li>YOLOv9 detection과 Lite-Mono depth를 결합해 거리 기반 위험도 산출</li>
-        <li>Structured pruning, TensorRT 최적화, Gradio UI 구성</li>
-        <li>모델 결과를 장치 판단 흐름에 연결하는 edge deployment 경험</li>
-      </ul>
-      <p><a href="https://github.com/kngyeol/pjt-fire-detect-drone">Repository</a></p>
-      <p><code>YOLOv9</code> <code>Lite-Mono</code> <code>TensorRT</code> <code>Python</code> <code>Gradio</code></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>CAN MultiECU HILS</h3>
-      <p><b>STM32 기반 멀티 ECU 검증 플랫폼</b></p>
-      <ul>
-        <li>Sensor ECU / Control ECU 분리 구조 설계</li>
-        <li>CAN 이중화, fail-over, FreeRTOS task structure 구성</li>
-        <li>Python 기반 scenario logging/replay와 HILS 검증 흐름 준비</li>
-      </ul>
-      <p><code>STM32</code> <code>FreeRTOS</code> <code>CAN</code> <code>Python</code> <code>HILS</code></p>
-    </td>
-  </tr>
-</table>
+## Projects
+| 프로젝트 | 설명/핵심 기여 | 기술 | 링크 |
+|---|---|---|---|
+| SCV - Smart Companion Vehicle | 자연어 명령을 ROS2/Nav2 주행, 비전 정렬, 로봇팔 조작으로 연결하는 이동형 AI 홈 어시스턴트. LLM drive bridge, precision alignment, 실물 runtime/smoke test, 시연 시나리오를 중심으로 통합 | ROS2 Humble, Nav2, SLAM/AMCL, robot_localization, Python, RealSense, BNO085 IMU, LLM Bridge | Private |
+| CAN MultiECU HILS | STM32 기반 Sensor ECU/Control ECU 분리 구조, CAN 이중화 fail-over, FreeRTOS task 구조, Python HILS 시나리오 주입/로깅/리플레이를 준비 중인 개인 프로젝트 | STM32, FreeRTOS, CAN, Python, HILS | Private/Local |
+| Balemale - AI 스마트 자율주차 시스템 | ROS2 Humble 로봇, Jetson Orin Nano, mecanum base, ArUco localization, MQTT bridge, 18-state mission FSM, Spring/Vue/kiosk/backend 연동 구조 경험 | ROS2 Humble, Jetson Orin Nano, Python, OpenCV, ArUco, MQTT, Spring Boot | Private |
+| TeamKAI - 자율주행 자작차 | 인지 파트장으로 LiDAR/camera/GPS/IMU 기반 cone detection, path planning, Stanley/Pure Pursuit control, CAN bridge가 연결되는 자율주행 파이프라인 경험 | ROS, C++, Python, PCL, OpenCV, YOLOv5/v8, LiDAR | [Repo](https://github.com/kngyeol/TeamKAI) |
+| ResNet50 MAC Accelerator | Zynq-7000 기반 ResNet50 Conv 연산 가속기. Q10.22 fixed-point MAC datapath, AXI DMA, AXI4-Lite 제어, 1x1/NxN convolution data movement 설계 | Verilog, Vivado, Xilinx Zynq-7000, AXI DMA, C | [Repo](https://github.com/kngyeol/resnet50-mac-accelerator) |
+| Fire & Smoke Detection Drone | YOLOv9 기반 화재/연기 탐지와 Lite-Mono 단안 거리 추정을 결합해 거리 기반 위험도를 산정한 Edge AI 프로젝트 | YOLOv9, Lite-Mono, TensorRT, Python, Gradio | [Repo](https://github.com/kngyeol/pjt-fire-detect-drone) |
+| TeamPathfinders - Xycar 자율주행 | Lane detection, traffic signal recognition, Bezier/Pure Pursuit 기반 주차 경로, IMU 기반 주행 과제를 수행한 ROS 자율주행 교육 프로젝트 | ROS, Python, OpenCV, Pure Pursuit, IMU | [Repo](https://github.com/kngyeol/TeamPathfinders) |
 
-## Tech Stack
-
-| Area | Stack |
-|---|---|
-| Robotics / Autonomous Driving | `ROS2`, `Nav2`, `Autoware`, `robot_localization`, `Lanelet2`, `OpenCV`, `PCL` |
-| Embedded / Vehicle Interface | `C`, `C++`, `Python`, `STM32`, `CAN`, `SocketCAN`, `UART`, `I2C`, `SPI`, `FreeRTOS` |
-| AI / Edge | `PyTorch`, `YOLOv8/v9`, `TensorRT`, `ONNX`, `Jetson`, `OpenCV` |
-| Hardware / Acceleration | `Verilog`, `Vivado`, `Xilinx Zynq`, `AXI DMA`, `Fixed-point arithmetic` |
-| Product / Tools | `Linux`, `Docker`, `MQTT`, `Qt5`, `Spring Boot`, `Vue`, `TypeScript` |
-
-## Open Source Plan
-
-| Target Area | Contribution Ideas |
+## Open Source Contribution Prep
+| 관심 영역 | 준비 중인 기여 방식 |
 |---|---|
 | ROS2 / Nav2 | 문서 보완, launch/config 예제 개선, 작은 test case 추가 |
-| Autoware / Vehicle Tooling | 재현 가능한 issue report, HILS/CAN 주변 tooling 탐색 |
+| Autoware / Vehicle Tooling | 재현 가능한 issue report, planning/CAN/HILS 주변 tooling 탐색 |
 | SocketCAN / Robotics Utilities | 예제 정리, bug reproduction, review-friendly small PR |
 
-## Award
+## Tech Stack
+### Core
+![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![ROS2](https://img.shields.io/badge/ROS2-22314E?style=flat-square&logo=ros&logoColor=white)
+![Nav2](https://img.shields.io/badge/Nav2-22314E?style=flat-square)
+![CAN](https://img.shields.io/badge/CAN-SocketCAN-00599C?style=flat-square)
+![FreeRTOS](https://img.shields.io/badge/FreeRTOS-87C540?style=flat-square)
+![HILS](https://img.shields.io/badge/HILS-4A4A4A?style=flat-square)
+![STM32](https://img.shields.io/badge/STM32-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white)
+![Jetson](https://img.shields.io/badge/Jetson-Orin%20Nano-76B900?style=flat-square&logo=nvidia&logoColor=white)
 
-| Date | Award |
-|---|---|
-| 2024.09.27 | 건국대 공학교육혁신센터 장려상 - 차량의 주변상황과 차량상태 인지시스템 |
+### Supporting
+![Autoware](https://img.shields.io/badge/Autoware-00A3E0?style=flat-square)
+![MQTT](https://img.shields.io/badge/MQTT-660066?style=flat-square&logo=eclipsemosquitto&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Verilog](https://img.shields.io/badge/Verilog-FPGA-8A2BE2?style=flat-square)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![YOLO](https://img.shields.io/badge/YOLO-v8%2Fv9-111111?style=flat-square)
+![Linux](https://img.shields.io/badge/Linux-Ubuntu%2022.04-E95420?style=flat-square&logo=ubuntu&logoColor=white)
+![Qt5](https://img.shields.io/badge/Qt-5-41CD52?style=flat-square&logo=qt&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+
+## Award
+- 건국대 공학교육혁신센터 장려상 (2024.09.27)
+  - 차량의 주변상황과 차량상태 인지시스템
