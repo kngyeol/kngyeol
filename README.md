@@ -15,7 +15,7 @@ ROS2/Nav2 기반 로봇 런타임과 임베디드/차량 인터페이스를 연�
 - 학력: 건국대학교 전기전자공학부 학사
 - 교육: 삼성청년SW·AI아카데미(SSAFY) 14기 임베디드 특화트랙
 - 관심 분야: 로봇 주행 런타임, 자율주행 SW, 임베디드/차량 인터페이스, AI 에이전트
-- 포트폴리오: [v0-portfolio-indol-chi-29.vercel.app](https://v0-portfolio-indol-chi-29.vercel.app/)
+- 포트폴리오: [kngyeol-portfolio.vercel.app](https://kngyeol-portfolio.vercel.app)
 
 ## Experience
 ### Skyautonet 자율주행SW개발부 인턴 (2024.09 ~ 2024.12)
