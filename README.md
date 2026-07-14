@@ -14,8 +14,6 @@ ROS2와 C++ 기반 자율주행 및 로보틱스 시스템에서 센서와 인�
 ## Profile
 
 - **학력:** 건국대학교 전기전자공학부 학사
-- **교육:** 삼성청년SW·AI아카데미(SSAFY) 14기 임베디드 특화트랙 수료  
-  `2025.07 - 2026.06 · 1,628시간`
 - **관심 분야:** 로봇 주행 런타임, 자율주행 SW, 임베디드/차량 인터페이스
 - **포트폴리오:** [kngyeol-portfolio.vercel.app](https://kngyeol-portfolio.vercel.app)
 
@@ -31,6 +29,17 @@ Autoware 기반 FODRo와 Level 4+ 자율주행 플랫폼에서 Planning, CAN/HIL
 - ROS2 제어 및 위치 토픽과 차량 CAN frame 사이의 변환, vcan 기반 actuator/state HILS를 구성했습니다.
 - FOD 접근 시 heading 반대 정렬 문제와 지도 데이터 QoS 불일치를 원인별로 수정하고 HILS에서 동작을 확인했습니다.
 - 차선변경 후 이전 차선을 따르던 문제를 상태 구독, 방향별 서비스, flag 초기화와 route reset 순서로 해결했습니다.
+
+## Education & Training
+
+### SSAFY 14기 | 임베디드 특화트랙
+
+`2025.07 - 2026.06` · `1,628시간` · `수료`
+
+삼성청년SW·AI아카데미에서 C/C++, MCU, RTOS, ROS2 기반 임베디드 및 모빌리티 SW 교육을 이수했습니다.
+
+- Balemale, Divery, SCV 팀 프로젝트를 수행했습니다.
+- ROS2 시스템 통합, AI 파이프라인, Docker/Jenkins 기반 배포 환경을 프로젝트에서 경험했습니다.
 
 ## Selected Projects
 
