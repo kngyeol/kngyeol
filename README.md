@@ -67,7 +67,7 @@ Autoware 기반 FODRo와 Level 4+ 자율주행 플랫폼에서 Planning, CAN/HIL
 - ArUco 기반 주행과 주차 정렬, 18개 상태의 입출고 미션 흐름을 구성했습니다.
 - 저장소 비공개 · [Portfolio](https://kngyeol-portfolio.vercel.app)
 
-### Divery | 다이빙 로그북 AI
+### Divary | 다이빙 로그북 AI
 
 `2026.02 - 2026.03` · `Python` · `AWS SQS` · `Docker` · `Jenkins`
 
