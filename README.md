@@ -38,7 +38,7 @@ Autoware 기반 FODRo와 Level 4+ 자율주행 플랫폼에서 Planning, CAN/HIL
 
 삼성청년SW·AI아카데미에서 C/C++, MCU, RTOS, ROS2 기반 임베디드 및 모빌리티 SW 교육을 이수했습니다.
 
-- Balemale, Divery, SCV 팀 프로젝트를 수행했습니다.
+- Balemale, Divary, SCV 팀 프로젝트를 수행했습니다.
 - ROS2 시스템 통합, AI 파이프라인, Docker/Jenkins 기반 배포 환경을 프로젝트에서 경험했습니다.
 
 ## Selected Projects
@@ -51,7 +51,7 @@ Autoware 기반 FODRo와 Level 4+ 자율주행 플랫폼에서 Planning, CAN/HIL
 - 실제 주행 기록을 반영한 real2sim과 rosbag 기반 SILS로 메카넘 주행을 튜닝했습니다.
 - [Public repository](https://github.com/kngyeol/Project-SCV)
 
-### DIVARY | 다이빙 로그북 AI
+### Divary | 다이빙 로그북 AI
 
 `2026.02 - 2026.03` · `Python` · `AWS SQS` · `Docker` · `Jenkins`
 
@@ -86,6 +86,7 @@ Autoware 기반 FODRo와 Level 4+ 자율주행 플랫폼에서 Planning, CAN/HIL
 
 ## Additional Projects
 
+- **ARAS** — 팀장으로 차량 개발을 맡아 Raspberry Pi 5, 카메라, ToF 센서와 중앙 FSM을 MQTT 노드로 연결한 MANUAL/AUTO/ACC RC Car 프로토타입을 구현했습니다. [Repository](https://github.com/kngyeol/Project-ARAS)
 - **IVI Dashboard** — Firestore의 가공 차량 로그를 실시간 구독하고 필터·차트로 시각화하며 날씨와 내비게이션 UI를 구성했습니다. [Repository](https://github.com/kngyeol/Project-IVI-Dashboard)
 - **Korean VQA** — 한국어 이미지 기반 4지선다 VQA에서 VLM 미세조정, 구조화 API 추론, 모델 라우팅과 번역 보조 경로를 탐색했습니다. [Repository](https://github.com/kngyeol/Project-Korean-VQA)
 - **ResNet50 MAC Accelerator** — 건국대학교 SoC Design Lab 공동 프로젝트에서 Zynq-7000 기반 MAC 가속 구조와 AXI-Stream/DMA 연동을 다뤘습니다. [Repository](https://github.com/kngyeol/resnet50-mac-accelerator)
