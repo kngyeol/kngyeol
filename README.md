@@ -49,7 +49,7 @@ Autoware 기반 FODRo와 Level 4+ 자율주행 플랫폼에서 Planning, CAN/HIL
 
 - 자연어 명령을 ROS2/Nav2 주행, 비전 정렬, 로봇팔 조작으로 연결하고 주행 명령 중재 계층과 LLM drive bridge를 통합했습니다.
 - 실제 주행 기록을 반영한 real2sim과 rosbag 기반 SILS로 메카넘 주행을 튜닝했습니다.
-- 저장소 비공개 · [Portfolio](https://kngyeol-portfolio.vercel.app)
+- [Public repository](https://github.com/kngyeol/Project-SCV)
 
 ### TeamKAI | 자율주행 자작차
 
@@ -65,7 +65,7 @@ Autoware 기반 FODRo와 Level 4+ 자율주행 플랫폼에서 Planning, CAN/HIL
 
 - 팀 프로젝트에서 ROS2 로봇 런타임, AI 인식과 MQTT 서버 사이의 통합 흐름을 다뤘습니다.
 - ArUco 기반 주행과 주차 정렬, 18개 상태의 입출고 미션 흐름을 구성했습니다.
-- 저장소 비공개 · [Portfolio](https://kngyeol-portfolio.vercel.app)
+- [Public repository](https://github.com/kngyeol/Project-Balemale)
 
 ### Divary | 다이빙 로그북 AI
 
@@ -74,7 +74,7 @@ Autoware 기반 FODRo와 Level 4+ 자율주행 플랫폼에서 Planning, CAN/HIL
 - 다이빙 영상에서 하이라이트와 어류를 탐지 및 분류해 AI 로그북을 생성하는 팀 프로젝트를 수행했습니다.
 - 영상 분석을 SQS 작업과 GPU worker로 분리하고 Redis, S3와 callback으로 상태와 결과를 연결했습니다.
 - Docker Compose와 Jenkins로 통합 실행환경과 배포 흐름을 구성했습니다.
-- 저장소 비공개 · [Portfolio](https://kngyeol-portfolio.vercel.app)
+- [Public repository](https://github.com/kngyeol/Project-DIVARY)
 
 ### Fire & Smoke Detection Drone
 
