@@ -51,13 +51,14 @@ Autoware 기반 FODRo와 Level 4+ 자율주행 플랫폼에서 Planning, CAN/HIL
 - 실제 주행 기록을 반영한 real2sim과 rosbag 기반 SILS로 메카넘 주행을 튜닝했습니다.
 - [Public repository](https://github.com/kngyeol/Project-SCV)
 
-### TeamKAI | 자율주행 자작차
+### DIVARY | 다이빙 로그북 AI
 
-`2023.11 - 2024.11` · `ROS` · `C++` · `PCL` · `OpenCV` · `SocketCAN`
+`2026.02 - 2026.03` · `Python` · `AWS SQS` · `Docker` · `Jenkins`
 
-- 인지 파트장으로 LiDAR pointcloud 전처리, 좌우 콘 분류, 경로 생성과 차량 제어 인터페이스가 연결되는 자율주행 파이프라인을 다뤘습니다.
-- 1랩에서 트랙맵을 작성하고 2랩에서 맵 기반으로 주행하는 전략을 수립했습니다.
-- [Public repository snapshot](https://github.com/kngyeol/TeamKAI)
+- 다이빙 영상에서 하이라이트와 어류를 탐지 및 분류해 AI 로그북을 생성하는 팀 프로젝트를 수행했습니다.
+- 영상 분석을 SQS 작업과 GPU worker로 분리하고 Redis, S3와 callback으로 상태와 결과를 연결했습니다.
+- Docker Compose와 Jenkins로 통합 실행환경과 배포 흐름을 구성했습니다.
+- [Public repository](https://github.com/kngyeol/Project-DIVARY)
 
 ### Balemale | AI 스마트 자율주차 로봇
 
@@ -67,22 +68,21 @@ Autoware 기반 FODRo와 Level 4+ 자율주행 플랫폼에서 Planning, CAN/HIL
 - ArUco 기반 주행과 주차 정렬, 18개 상태의 입출고 미션 흐름을 구성했습니다.
 - [Public repository](https://github.com/kngyeol/Project-Balemale)
 
-### Divary | 다이빙 로그북 AI
+### TeamKAI | 자율주행 자작차
 
-`2026.02 - 2026.03` · `Python` · `AWS SQS` · `Docker` · `Jenkins`
+`2023.11 - 2024.11` · `ROS` · `C++` · `PCL` · `OpenCV` · `SocketCAN`
 
-- 다이빙 영상에서 하이라이트와 어류를 탐지 및 분류해 AI 로그북을 생성하는 팀 프로젝트를 수행했습니다.
-- 영상 분석을 SQS 작업과 GPU worker로 분리하고 Redis, S3와 callback으로 상태와 결과를 연결했습니다.
-- Docker Compose와 Jenkins로 통합 실행환경과 배포 흐름을 구성했습니다.
-- [Public repository](https://github.com/kngyeol/Project-DIVARY)
+- 인지 파트장으로 LiDAR pointcloud 전처리, 좌우 콘 분류, 경로 생성과 차량 제어 인터페이스가 연결되는 자율주행 파이프라인을 다뤘습니다.
+- 1랩에서 트랙맵을 작성하고 2랩에서 맵 기반으로 주행하는 전략을 수립했습니다.
+- [Public repository](https://github.com/kngyeol/Project-TeamKAI)
 
-### Fire & Smoke Detection Drone
+### FireDrone | Fire & Smoke Detection
 
 `2024.01 - 2024.06` · `YOLOv9` · `Lite-Mono` · `TensorRT` · `Jetson Orin`
 
 - 화재와 연기 탐지에 단안 depth를 결합해 객체 크기와 상대 거리 기반 위험도를 계산했습니다.
 - 저장소 README 기준 validation 759장에서 all-class `mAP50 0.867`을 기록했습니다.
-- [Public repository](https://github.com/kngyeol/pjt-fire-detect-drone)
+- [Public repository](https://github.com/kngyeol/Project-FireDrone)
 
 ## Additional Projects
 
