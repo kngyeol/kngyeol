@@ -89,9 +89,9 @@ Autoware 기반 FODRo와 Level 4+ 자율주행 플랫폼에서 Planning, CAN/HIL
 - **ARAS** — 팀장으로 차량 개발을 맡아 Raspberry Pi 5, 카메라, ToF 센서와 중앙 FSM을 MQTT 노드로 연결한 MANUAL/AUTO/ACC RC Car 프로토타입을 구현했습니다. [Repository](https://github.com/kngyeol/Project-ARAS)
 - **IVI Dashboard** — Firestore의 가공 차량 로그를 실시간 구독하고 필터·차트로 시각화하며 날씨와 내비게이션 UI를 구성했습니다. [Repository](https://github.com/kngyeol/Project-IVI-Dashboard)
 - **Korean VQA** — 한국어 이미지 기반 4지선다 VQA에서 VLM 미세조정, 구조화 API 추론, 모델 라우팅과 번역 보조 경로를 탐색했습니다. [Repository](https://github.com/kngyeol/Project-Korean-VQA)
-- **ResNet50 MAC Accelerator** — 건국대학교 SoC Design Lab 공동 프로젝트에서 Zynq-7000 기반 MAC 가속 구조와 AXI-Stream/DMA 연동을 다뤘습니다. [Repository](https://github.com/kngyeol/resnet50-mac-accelerator)
-- **TeamPathfinders** — ROS 자율주행 교육 프로젝트에서 Bezier 주차 경로, Pure Pursuit 추적, 카메라 신호 인식과 IMU 기반 주행 과제를 수행했습니다. [Repository](https://github.com/kngyeol/TeamPathfinders)
-- **ATmega128 Coursework** — AVR Assembly로 UART, timer interrupt, ADC, TWI와 7-segment 제어 코드를 작성했습니다. [Repository](https://github.com/kngyeol/pjt_microprocessor)
+- **ResNet50 MAC Accelerator** — 건국대학교 SoC Design Lab 수업 과제로 연구실 reference 코드를 수정하며 Zynq-7000 기반 MAC 가속 구조와 AXI-Stream/DMA 연동을 다뤘습니다. `저장소 비공개`
+- **TeamPathfinders** — ROS 자율주행 교육 프로젝트에서 Bezier 주차 경로, Pure Pursuit 추적, 카메라 신호 인식과 IMU 기반 주행 과제를 수행했습니다. `저장소 비공개`
+- **ATmega128 Coursework** — AVR Assembly로 UART, timer interrupt, ADC, TWI와 7-segment 제어 코드를 작성했습니다. `저장소 비공개`
 
 ## Skills
 
