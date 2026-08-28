@@ -36,7 +36,7 @@ Autoware 기반 FODRo와 Level 4+ 자율주행 플랫폼에서 Planning, CAN/HIL
 
 `2025.07 - 2026.06` · `1,628시간` · `수료`
 
-삼성청년SW·AI아카데미에서 C/C++, MCU, RTOS, ROS2 기반 임베디드 및 모빌리티 SW 교육을 이수했습니다.
+삼성청년SW·AI아카데미에서 C/C++, MCU, RTOS, ROS2 기반 임베디드 SW 교육을 이수했습니다.
 
 - Balemale, Divary, SCV 팀 프로젝트를 수행했습니다.
 - ROS2 시스템 통합, AI 파이프라인, Docker/Jenkins 기반 배포 환경을 프로젝트에서 경험했습니다.
